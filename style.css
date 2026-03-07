@@ -1,185 +1,275 @@
-/* ===============================
-   RESET DASAR
-   =============================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-/* ===============================
-   BODY
-   =============================== */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f4f6f9;
+
+padding:15px;
+
 }
 
+/* HEADER */
 
-/* ===============================
-   HEADER
-   =============================== */
-.header {
-    width: 100%;
-    background-color: #0d6efd;
-    padding: 15px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#2c7be5;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:10px;
+
 }
 
-.header-container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header h1{
+
+font-size:24px;
+
 }
 
-/* Judul */
-.title {
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
+.header img{
+
+height:45px;
+
 }
 
-/* Logo */
-.logo img {
-    height: 60px;
+/* CONTAINER */
+
+.container{
+
+background:white;
+
+margin-top:20px;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
 }
 
+/* SCAN TITLE */
 
-/* ===============================
-   CONTAINER UTAMA
-   =============================== */
-.container {
-    width: 90%;
-    max-width: 700px;
-    margin-top: 40px;
-    text-align: center;
+.scan-title{
+
+text-align:center;
+
+margin-bottom:20px;
+
+font-weight:600;
+
 }
 
+/* INPUT BARCODE */
 
-/* ===============================
-   JUDUL SCAN
-   =============================== */
-.scan-title {
-    font-size: 26px;
-    margin-bottom: 20px;
-    color: #333;
+#barcode{
+
+width:100%;
+
+padding:15px;
+
+font-size:18px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+text-align:center;
+
 }
 
+/* NAMA BARANG */
 
-/* ===============================
-   INPUT BARCODE
-   =============================== */
-#barcode {
-    width: 100%;
-    padding: 18px;
-    font-size: 20px;
-    border: 2px solid #0d6efd;
-    border-radius: 8px;
-    outline: none;
-    text-align: center;
-}
+.nama-barang{
 
-#barcode:focus {
-    border-color: #084298;
-}
+margin-top:25px;
 
+text-align:center;
 
-/* ===============================
-   HASIL
-   =============================== */
-.hasil {
-    margin-top: 30px;
-}
-
-
-/* CARD HASIL */
-.hasil-container {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-
-/* ===============================
-   NAMA BARANG
-   =============================== */
-.nama-barang h3 {
-    font-size: 18px;
-    color: #666;
-}
-
-#namaBarang {
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-
-/* ===============================
-   SATUAN
-   =============================== */
-.satuan h3 {
-    font-size: 18px;
-    color: #666;
-}
-
-#satuan {
-    font-size: 22px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-
-/* ===============================
-   LIST HARGA
-   =============================== */
-.harga-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-
-/* ITEM HARGA */
-.harga-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 20px;
-    background-color: #f1f3f5;
-    border-radius: 8px;
-    font-size: 20px;
-}
-
-/* Harga utama */
-#harga1 {
-    font-weight: bold;
-    color: #0d6efd;
-}
-
-
-/* ===============================
-   RESPONSIVE
-   =============================== */
-@media (max-width: 600px) {
-
-.title{
-    font-size:24px;
 }
 
 #namaBarang{
-    font-size:22px;
+
+font-size:30px;
+
+font-weight:600;
+
+color:#333;
+
+}
+
+/* SATUAN */
+
+.satuan{
+
+text-align:center;
+
+margin-top:10px;
+
+color:#666;
+
+}
+
+/* HARGA */
+
+.harga-list{
+
+margin-top:25px;
+
 }
 
 .harga-item{
-    font-size:18px;
+
+background:#f7f9fc;
+
+padding:15px;
+
+border-radius:8px;
+
+margin-bottom:12px;
+
+font-size:20px;
+
+text-align:center;
+
+font-weight:500;
+
+}
+
+/* MODAL */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,0.4);
+
+}
+
+.modal-content{
+
+background:white;
+
+padding:25px;
+
+border-radius:10px;
+
+max-width:350px;
+
+margin:200px auto;
+
+text-align:center;
+
+}
+
+.modal button{
+
+margin-top:15px;
+
+padding:10px 20px;
+
+border:none;
+
+background:#2c7be5;
+
+color:white;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width:600px){
+
+#namaBarang{
+
+font-size:26px;
+
+}
+
+.harga-item{
+
+font-size:18px;
+
+}
+
+.header h1{
+
+font-size:20px;
+
+}
+
+}
+
+/* RESPONSIVE TABLET */
+
+@media (min-width:601px) and (max-width:1024px){
+
+#namaBarang{
+
+font-size:34px;
+
+}
+
+.harga-item{
+
+font-size:22px;
+
+}
+
+}
+
+/* MONITOR BESAR */
+
+@media (min-width:1025px){
+
+.container{
+
+max-width:700px;
+
+margin:auto;
+
+margin-top:40px;
+
+}
+
+#namaBarang{
+
+font-size:40px;
+
+}
+
+.harga-item{
+
+font-size:24px;
+
 }
 
 }
