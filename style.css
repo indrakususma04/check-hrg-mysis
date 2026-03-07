@@ -1,0 +1,185 @@
+/* ===============================
+   RESET DASAR
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+   =============================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ===============================
+   HEADER
+   =============================== */
+.header {
+    width: 100%;
+    background-color: #0d6efd;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Judul */
+.title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+}
+
+
+/* ===============================
+   CONTAINER UTAMA
+   =============================== */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* ===============================
+   JUDUL SCAN
+   =============================== */
+.scan-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* ===============================
+   INPUT BARCODE
+   =============================== */
+#barcode {
+    width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+#barcode:focus {
+    border-color: #084298;
+}
+
+
+/* ===============================
+   HASIL
+   =============================== */
+.hasil {
+    margin-top: 30px;
+}
+
+
+/* CARD HASIL */
+.hasil-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* ===============================
+   NAMA BARANG
+   =============================== */
+.nama-barang h3 {
+    font-size: 18px;
+    color: #666;
+}
+
+#namaBarang {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* ===============================
+   SATUAN
+   =============================== */
+.satuan h3 {
+    font-size: 18px;
+    color: #666;
+}
+
+#satuan {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* ===============================
+   LIST HARGA
+   =============================== */
+.harga-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* ITEM HARGA */
+.harga-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+/* Harga utama */
+#harga1 {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 600px) {
+
+.title{
+    font-size:24px;
+}
+
+#namaBarang{
+    font-size:22px;
+}
+
+.harga-item{
+    font-size:18px;
+}
+
+}
