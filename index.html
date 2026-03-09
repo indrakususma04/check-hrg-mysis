@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self Price Checker</title>
+  <link rel="icon" type="image/svg+xml" href="./img/logo-toko.svg" />
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./img/logo-toko.svg" alt="Logo Toko" />
+      </div>
+      <h1 class="header-title">SELF PRICE CHECKER TOKO TIGA PUTRA</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="checker">
+      <h2 class="checker-title">Cek Harga Barang</h2>
+      <input  class="input" type="text" id="barcode" placeholder="SCAN DISINI !!..." autocomplete="off" utofocus>
+      <div class="hasil" id="hasil">
+        <div class="nama-barang">
+          <h3>NAMA BARANG:</h3>
+          <p id="nama-barang"></p>
+          <div class="info-grid">
+            <div class="info-card">
+              <h3 id="satuan"></h3>
+            </div>
+          </div>
+          <div class="harga-item">
+            <p class="Harga-label" id="labelHarga1"></p>
+          </div>
+          <div class="harga-item">
+            <p id="labelHarga2" class="Harga-label"></p>
+          </div>
+          <div class="harga-item">
+            <p class="Harga-label" id="labelHarga3"></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+       <div id="modal" class="modal">
+          <div class="modal-content">
+            <p id="modalMessage">Barang tidak ditemukan</p>
+            <button id="modalClose">Tutup</button>
+          </div>
+        </div>
+  <footer>
+    <!-- footer -->
+  </footer>
+  <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #f4f7ff 0%, #eef3ff 100%);
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background: #0d47a1;
+  color: #fff;
+  padding: 14px 0;
+  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.25);
+}
+
+.header-container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.header-title {
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* MAIN */
+main {
+  min-height: calc(100vh - 90px);
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+
+.checker {
+  width: min(900px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 30px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.checker-title {
+  color: #0d47a1;
+  font-size: clamp(20px, 2.5vw, 28px);
+  margin-bottom: 16px;
+}
+
+/* INPUT */
+.input {
+  display: block;
+  width: min(760px, 100%);
+  margin: 0 auto 18px auto;
+  padding: 18px 20px;
+  font-size: clamp(18px, 2.2vw, 24px);
+  border: 2px solid #c7d2fe;
+  border-radius: 14px;
+  outline: none;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+/* HASIL */
+.hasil {
+  margin-top: 8px;
+  text-align: left;
+}
+
+.nama-barang h3 {
+  font-size: 16px;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+/* NAMA BARANG DIBESARKAN */
+#nama-barang {
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 14px;
+  min-height: 48px;
+  line-height: 1.2;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.info-card {
+  background: #f8faff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+#satuan {
+  color: #1e3a8a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.harga-item {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.Harga-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b3c8c;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-content {
+  width: min(420px, 100%);
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+#modalMessage {
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
+#modalClose {
+  border: none;
+  background: #0d47a1;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .checker {
+    padding: 16px;
+  }
+
+  .input {
+    padding: 14px 14px;
+    font-size: 18px;
+  }
+
+  .Harga-label {
+    font-size: 16px;
+  }
+}
